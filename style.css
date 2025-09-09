@@ -1,0 +1,62 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #575757;
+    color: #5200eb;
+    height: 100dvh;
+    display: grid;
+    place-content: center;
+}
+header {
+    width: 100%;
+}
+.barra-pesquisa {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    max-width: 700px;
+    margin: 0 30px;
+}
+
+.barra-pesquisa input {
+    width: 100%;
+    padding: 12px 15px;
+    border-radius: 6px 0 0 6px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background-color: #616196;
+    color: #927fff;
+}
+
+.barra-pesquisa input::placeholder {
+    color: #9aa0ff;
+}
+
+.barra-pesquisa button {
+    padding: 12px 20px;
+    background-color: #5900ff; 
+    border: none;
+    color: #9f9fff;
+    border-radius: 0 6px 6px 0;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.barra-pesquisa button:hover {
+    background-color: #7e38ff;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(180deg, var(--secondary-color), var(--primary-color));
+    color: #a3a3c2;
+    font-size: 14px;
+    border-top: 1px solid rgba(139, 92, 246, 0.2);
+}
